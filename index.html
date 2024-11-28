@@ -20,12 +20,36 @@
       height: 100vh; /* Full height */
       width: 100%; /* Full width */
     }
+     /* Loading spinner container */
+     .spinner-container {
+      position: absolute;
+      bottom: 150px; /* Adjust distance from the bottom */
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    /* Custom spinner color for Wells Fargo red */
+    .spinner-border {
+      color: #C40403;
+    }
+    .loading-text {
+      color: #C40403; }
 
    
   </style>
 </head>
 <body>
   <div class="bg-cover"></div>
+   <!-- Loading Animation -->
+   <div class="spinner-container">
+    <div class="d-flex align-items-center">
+      <!-- Spinner -->
+      <div class="spinner-border" role="status" aria-hidden="true"></div>
+      <!-- Loading Text -->
+      <span class="ms-3 text-light fs-5" > <span style="color: #C40403;"> Loading 99%</span></span>
+    </div>
+  </div>
+
   
   
   <!-- Bootstrap JS (optional) -->
