@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BOYD MARANELL, WELLS Fargo</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOYD MARANELL, WELLS Fargo</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
 
-    .bg-cover {
-      background-image: url('pics.jpg'); /* Replace with your image URL */
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh; /* Full height */
-      width: 100%; /* Full width */
-    }
-     /* Loading spinner container */
-     .spinner-container {
-      position: absolute;
-      bottom: 15%; /* Adjust distance from the bottom */
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      margin-bottom: 10vh; /* Adjust the bottom spacing using viewport units */
-      text-align: center;
-    }
-    /* Custom spinner color for Wells Fargo red */
-    .spinner-border {
-      color: #C40403;
-    }
-    .loading-text {
-      color: #C40403; }
-
-   
-  </style>
-</head>
-<body>
-  <div class="bg-cover"></div>
-   <!-- Loading Animation -->
-   <div class="spinner-container">
-    <div class="d-flex align-items-center">
-      <!-- Spinner -->
-      <div class="spinner-border" role="status" aria-hidden="true"></div>
-      <!-- Loading Text -->
-      <span class="ms-3 text-light fs-5" > <span style="color: #C40403;"> Payment Loading 99%</span></span>
+      .bg-cover {
+        background-image: url("pics.jpg"); /* Replace with your image URL */
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* Full height */
+        width: 100%; /* Full width */
+      }
+      /* Loading spinner container */
+      .spinner-container {
+        position: absolute;
+        bottom: 15%; /* Adjust distance from the bottom */
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-bottom: 5vh; /* Adjust the bottom spacing using viewport units */
+        text-align: center;
+      }
+      .spinner-border.large-spinner {
+        width: 6rem; /* Adjust size for larger spinner */
+        height: 6rem;
+      }
+      /* Custom spinner color for Wells Fargo red */
+      .spinner-border {
+        color: #c40403;
+        width: 3rem;
+        height: 3rem;
+      }
+      .loading-text {
+        color: #c40403;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-cover"></div>
+    <!-- Loading Animation -->
+    <div class="spinner-container">
+      <div class="d-flex align-items-center">
+        <!-- Spinner -->
+        <div class="spinner-border" role="status" aria-hidden="true"></div>
+        <!-- Loading Text -->
+        <span class="ms-3 text-light fs-5">
+          <span
+            style="
+              color: #c40403;
+              font-size: 1.5rem; /* Consistent text size */
+              margin-left: 1rem; /* Space between spinner and text */
+              white-space: nowrap;
+            "
+          >
+            Payment Loading 99%</span
+          ></span
+        >
+      </div>
     </div>
-  </div>
 
-  
-  
-  <!-- Bootstrap JS (optional) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
